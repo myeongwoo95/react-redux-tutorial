@@ -66,11 +66,13 @@ const store = createStore(reducer);
 console.log(store.getState());
 
 //구독 및 dispatch
+
 const listener = () => {
     const state = store.getState();
     console.log(state);
 };
 
+//eslint-disable-next-line
 const unsubscribe = store.subscribe(listener); //구독
 //unsubscribe(); //구독해지
 
