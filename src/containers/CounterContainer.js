@@ -9,6 +9,20 @@ function CounterContainer(){
         diff: state.counter.diff
     }))
 
+    
+    /*
+    // 최적화 방법 1
+    const number = useSelector(state => state.counter.number)
+    const diff = useSelector(state => state.counter.diff)
+    */
+
+      /*
+    // 최적화 방법 2
+    const number = useSelector(state => state.counter.number)
+    const diff = useSelector(state => state.counter.diff)
+    */
+
+
     const dispatch = useDispatch();
     
     const onIncrease = () => dispatch(increase());
